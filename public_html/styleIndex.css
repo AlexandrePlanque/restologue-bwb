@@ -1,6 +1,3 @@
-body{
-    background-color: red;
-}
 
 #gauche {
 float:left;
@@ -23,4 +20,92 @@ select{
 
 input{
     width: 550px;
+}
+
+
+.opaque-navbar {
+    background-color: rgba(0,0,0,0.4); 
+    height: 60px;
+    border-bottom: 0px;
+    transition: background-color .5s ease 0s;
+}
+
+.opaque-navbar.opaque {
+    background-color: black;
+    height: 60px;
+    transition: background-color .5s ease 0s;
+}
+
+
+
+
+@media (max-width: 992px) {
+
+    .opaque-navbar {
+        background-color: black;
+        height: 60px;
+        transition: background-color .5s ease 0s;
+    }
+
+}
+.navbar-brand{
+    color: white;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    padding-right: 100px;
+    margin-right: 85px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+
+.bg-light {
+    background-color: black!important;
+}
+
+
+
+body{
+    background: linear-gradient(to bottom, #1a1a1a 0%, #999966 100%);
+}
+
+
+
+h3{
+    padding-top: 80px;
+    color: white !important;
+}
+
+
+
+
+.text-center {
+    text-align: center!important;
+    margin: auto 500px;
+}
+
+html, body {
+    height: 100%;
+}
+
+h4{
+    color: white !important;
+}
+
+.form-group{
+    width: 400px
+}
+
+.addd{
+    width: 400px!important;
 }

@@ -23,7 +23,7 @@ $(document).ready(function () {
 
         success: function (data) {
             affichageCarte(data);
-            affichageMenu(data);
+//            affichageMenu(data);
 
 
         },
