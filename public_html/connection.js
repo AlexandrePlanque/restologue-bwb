@@ -1,7 +1,7 @@
-var ip = "http://192.168.1.36";
-$(document).ready(function () {
-    debug();
-});
+var ip = "http://192.168.1.56";
+//$(document).ready(function () {
+//    debug();
+//});
 
 //action requise avec la balise form pour annuler l'envoi automatique de la requete dû aux proprietées de la balise
 $("form").submit(function(event){
@@ -20,10 +20,10 @@ console.log(user);
     $.ajax({
         type: "POST",
         dataType : 'json',
-        url : ip +":3000/verify",
+        url : ip +":3002/verify",
         data : user,
         success : function(retour){
-            window.location.href = "http://restologue.bwb/";
+            window.location.href = "http://administration.restologue.bwb/";
         },
         error : function(param1, param2){
            alert('Erreur d\'authentification, veuillez réessayer');
